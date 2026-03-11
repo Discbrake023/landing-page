@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MOKIT ID COLLECTOR</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ── HEADER ── -->
+<header>
+  <a href="#" class="logo">
+    <img src="images/logo.png" alt="Mokit ID Logo" />
+    <div class="logo-text">
+      <span class="brand">mokit id</span>
+      <span class="sub">Collector Community</span>
+    </div>
+  </a>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#tools">Tutorials</a>
+    <a href="#events">Events</a>
+    <a href="#join" class="btn-nav">Join Us</a>
+  </nav>
+  <button class="hamburger" id="ham">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<div class="mobile-menu" id="mobNav">
+  <a href="#about"   onclick="closeMenu()">About</a>
+  <a href="#gallery" onclick="closeMenu()">Gallery</a>
+  <a href="#tools"   onclick="closeMenu()">Tutorials</a>
+  <a href="#events"  onclick="closeMenu()">Events</a>
+  <a href="#join" class="btn-nav" onclick="closeMenu()">Join Us</a>
+</div>
+
+<!-- ── HERO ── -->
+<section class="hero" id="home">
+  <div class="hero-left">
+    <div class="hero-badge">Komunitas Model Kit Indonesia</div>
+    <h1>Build. Detail.<br /><span>Conquer.</span></h1>
+    <p class="hero-desc">
+      Selamat datang di <strong>Mokit ID Collector</strong> — komunitas kolektor
+      dan builder Gundam &amp; model kit Indonesia. Kami berbagi teknik, karya,
+      dan passion yang sama.
+    </p>
+    <div class="hero-buttons">
+      <a href="#gallery" class="btn btn-primary">Lihat Gallery</a>
+      <a href="#join"    class="btn btn-outline">Bergabung</a>
+    </div>
+    <div class="hero-stats">
+      <div><div class="h-stat-n">1.2K+</div><div class="h-stat-l">Members</div></div>
+      <div><div class="h-stat-n">340+</div><div class="h-stat-l">Builds</div></div>
+      <div><div class="h-stat-n">28</div><div class="h-stat-l">Events</div></div>
+      <div><div class="h-stat-n">15+</div><div class="h-stat-l">Kota</div></div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <img src="images/hero.jpg" alt="Gundam Detail Build" />
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- ── ABOUT ── -->
+<section class="about" id="about">
+  <div class="about-grid">
+    <div class="about-img-wrap reveal">
+      <img src="images/about.jpg" alt="Model Kit Tools & Runners" />
+      <div class="about-badge">
+        <div class="num">2018</div>
+        <div class="lbl">Est. Year</div>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="sec-label">Tentang Kami</div>
+      <h2 class="sec-title">Lebih dari<br />Sekadar <span>Hobby</span></h2>
+      <p class="sec-desc">
+        Mokit ID Collector berdiri sejak 2018 sebagai komunitas kolektor dan builder
+        model kit Indonesia. Kami menyambut semua level dari yang baru unboxing
+        pertama hingga master builder berpengalaman.
+      </p>
+      <p class="sec-desc" style="margin-top:12px">
+        Komunitas ini tentang kesabaran, seni, presisi, dan koneksi antar sesama
+        enthusiast di seluruh Indonesia.
+      </p>
+      <ul class="checklist">
+        <li>Straight Build, Panel Lining, hingga Full Custom Paint</li>
+        <li>Workshop bulanan dengan mentor berpengalaman</li>
+        <li>Gathering &amp; display event nasional setiap kuartal</li>
+        <li>Group buy kit &amp; tools harga komunitas</li>
+        <li>Database review kit dari seluruh member</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- ── GALLERY ── -->
+<section class="gallery" id="gallery">
+  <div class="sec-label reveal">Showcase</div>
+  <h2 class="sec-title reveal">Gallery <span>Karya</span> Member</h2>
+  <p class="sec-desc reveal">Koleksi hasil build dari para member komunitas Mokit ID Collector.</p>
+
+  <div class="gallery-grid reveal">
+    <div class="g-item" style="grid-column:span 2">
+      <img src="images/g1.jpg" alt="RG RX-78-2 Custom Color" />
+      <div class="g-body">
+        <div class="g-name">RG RX-78-2</div>
+        <div class="g-builder">Custom Color — @efsf.builder</div>
+      </div>
+    </div>
+    <div class="g-item">
+      <img src="images/g2.jpg" alt="MG Sinanju Ver.Ka" />
+      <div class="g-body">
+        <div class="g-name">MG Sinanju Ver.Ka</div>
+        <div class="g-builder">Custom Color — Vorom Workshop</div>
+      </div>
+    </div>
+    <div class="g-item">
+      <img src="images/g3.jpg" alt="MGEX Strike Freedom Straight Build" />
+      <div class="g-body">
+        <div class="g-name">MGEX Strike Freedom</div>
+        <div class="g-builder">Straight Build — @sf.chrome</div>
+      </div>
+    </div>
+    <div class="g-item">
+      <img src="images/g4.jpg" alt="MGEX Strike Freedom Mighty" />
+      <div class="g-body">
+        <div class="g-name">MGEX Strike Freedom</div>
+        <div class="g-builder">Mighty Strike Freedom — @strike.detail</div>
+      </div>
+    </div>
+    <div class="g-item">
+      <img src="images/g5.jpg" alt="Metal Build Destiny" />
+      <div class="g-body">
+        <div class="g-name">Metal Build Destiny</div>
+        <div class="g-builder">Custom Color — @destiny.mod</div>
+      </div>
+    </div>
+    <div class="g-item">
+      <img src="images/g6.jpg" alt="RG RX-78-2 Straight Build" />
+      <div class="g-body">
+        <div class="g-name">RG RX-78-2</div>
+        <div class="g-builder">Straight Build — @hoonisee</div>
+      </div>
+    </div>
+    <div class="g-item">
+      <img src="images/g7.jpg" alt="PG Unleashed RX-78-2" />
+      <div class="g-body">
+        <div class="g-name">PG Unleashed RX-78-2</div>
+        <div class="g-builder">Full Detail — @rx78.collector</div>
+      </div>
+    </div>
+    <div class="g-item">
+      <img src="images/g8.jpg" alt="FM Barbatos" />
+      <div class="g-body">
+        <div class="g-name">FM Barbatos</div>
+        <div class="g-builder">Weathering Custom — by NAOKI</div>
+      </div>
+    </div>
+    <div class="g-item">
+      <img src="images/g9.jpg" alt="MG Ver.Ka Sazabi" />
+      <div class="g-body">
+        <div class="g-name">MG Ver.Ka Sazabi</div>
+        <div class="g-builder">Metallic Version — @sinanju.chrome</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- ── FEATURES ── -->
+<section class="features">
+  <div class="sec-label reveal">Fokus Komunitas</div>
+  <h2 class="sec-title reveal">Apa yang <span>Kami</span> Lakukan</h2>
+  <div class="features-grid">
+    <div class="feature-card reveal">
+      <div class="feature-icon">🎨</div>
+      <h3>Custom Painting</h3>
+      <p>Dari panel lining dasar hingga airbrush full custom. Kami berbagi teknik cat, gradasi warna, dan weathering untuk hasil build yang memukau.</p>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon">🏆</div>
+      <h3>Koleksi &amp; Display</h3>
+      <p>Pameran dan kompetisi display model kit nasional. Kami membantu member menampilkan karya terbaik mereka di hadapan komunitas.</p>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon">🤝</div>
+      <h3>Gathering &amp; Event</h3>
+      <p>Acara gathering rutin di berbagai kota — tempat bertemu sesama builder, swap kit, dan belajar langsung dari master builder berpengalaman.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- ── TOOLS & GUIDE ── -->
+<section class="tools" id="tools">
+  <div class="tools-grid">
+    <div class="reveal">
+      <div class="sec-label">Equipment</div>
+      <h2 class="sec-title">Tools &amp; <span>Peralatan</span></h2>
+      <p class="sec-desc">Peralatan yang tepat adalah kunci hasil build yang maksimal.</p>
+      <div class="tool-list">
+        <div class="tool-card">
+          <div class="tool-icon">✂️</div>
+          <div class="tool-info">
+            <h4>Nipper / Tang Potong</h4>
+            <p>Single-blade nipper untuk potongan bersih tanpa gate mark di permukaan part.</p>
+          </div>
+          <span class="badge badge-g">Basic</span>
+        </div>
+        <div class="tool-card">
+          <div class="tool-icon">🖊️</div>
+          <div class="tool-info">
+            <h4>Panel Line Marker</h4>
+            <p>Gundam Marker atau Tamiya Panel Accent untuk mengisi panel line dan menambah depth visual.</p>
+          </div>
+          <span class="badge badge-g">Basic</span>
+        </div>
+        <div class="tool-card">
+          <div class="tool-icon">🔧</div>
+          <div class="tool-info">
+            <h4>Sanding Stick / Amplas</h4>
+            <p>Grit 400–2000 untuk menghaluskan gate mark. Finishing dengan polishing compound.</p>
+          </div>
+          <span class="badge badge-y">Mid</span>
+        </div>
+        <div class="tool-card">
+          <div class="tool-icon">🎨</div>
+          <div class="tool-info">
+            <h4>Airbrush + Compressor</h4>
+            <p>Untuk custom paint dan gradasi. Iwata 0.3mm nozzle sangat direkomendasikan komunitas.</p>
+          </div>
+          <span class="badge badge-r">Pro</span>
+        </div>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="sec-label">Step by Step</div>
+      <h2 class="sec-title">Panduan <span>Build</span></h2>
+      <p class="sec-desc">Alur kerja standar komunitas untuk hasil build terbaik.</p>
+      <div class="steps">
+        <div class="step"><div class="step-n">1</div><div><h4>Gate Removal</h4><p>Potong runner dua tahap — jauh dulu lalu tepat di gate untuk hasil bersih.</p></div></div>
+        <div class="step"><div class="step-n">2</div><div><h4>Sanding &amp; Cleanup</h4><p>Ratakan sisa gate dengan amplas bertahap. Cek di bawah cahaya untuk permukaan mulus.</p></div></div>
+        <div class="step"><div class="step-n">3</div><div><h4>Panel Lining</h4><p>Isi panel line dengan marker, hapus kelebihan dengan cotton bud untuk hasil tajam.</p></div></div>
+        <div class="step"><div class="step-n">4</div><div><h4>Decal &amp; Markings</h4><p>Aplikasikan decal water slide dengan Mr. Mark Softer agar mengikuti kontur kit.</p></div></div>
+        <div class="step"><div class="step-n">5</div><div><h4>Top Coat Finishing</h4><p>Semprot top coat untuk perlindungan dan unifikasi finish seluruh permukaan kit.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- ── EVENTS ── -->
+<section class="events" id="events">
+  <div class="sec-label reveal">Gathering &amp; Events</div>
+  <h2 class="sec-title reveal">Agenda <span>Komunitas</span></h2>
+  <p class="sec-desc reveal">Jadwal acara rutin dari workshop teknik hingga display kompetisi nasional.</p>
+  <div class="events-grid">
+    <div class="event-card reveal">
+      <img class="event-img" src="images/g3.jpg" alt="Workshop" />
+      <div class="event-body">
+        <span class="event-date">29 Maret 2026</span>
+        <h3>Workshop Panel Lining &amp; Weathering</h3>
+        <p>Sesi hands-on bersama builder veteran. Bawa kit favoritmu, kita bahas teknik dari dasar.</p>
+        <div class="event-loc">📍 Jakarta Selatan — Hobbyspace Studio</div>
+      </div>
+    </div>
+    <div class="event-card reveal">
+      <img class="event-img" src="images/g4.jpg" alt="National Display" />
+      <div class="event-body">
+        <span class="event-date">19–20 April 2026</span>
+        <h3>Mokit ID National Display 2026</h3>
+        <p>Kompetisi &amp; pameran terbesar komunitas. Kategori SD, HG, MG, PG, dan Diorama.</p>
+        <div class="event-loc">📍 Bandung — Trans Studio Convention Hall</div>
+      </div>
+    </div>
+    <div class="event-card reveal">
+      <img class="event-img" src="images/g8.jpg" alt="Group Buy" />
+      <div class="event-body">
+        <span class="event-date">3 Mei 2026</span>
+        <h3>Quarterly Group Buy &amp; Kit Swap</h3>
+        <p>Beli bersama harga lebih hemat, tukar kit selesai, dan temukan item langka dari kolektor lain.</p>
+        <div class="event-loc">📍 Surabaya — The Plaza Kenjeran</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- ── JOIN ── -->
+<section class="join" id="join">
+  <div class="join-grid">
+    <div class="reveal">
+      <div class="sec-label">Rekrutmen</div>
+      <h2 class="sec-title">Bergabung<br />Bersama <span>Kami</span></h2>
+      <p class="sec-desc">Level apapun kamu saat ini — komunitasmu ada di sini.</p>
+      <div class="benefits">
+        <div class="benefit">
+          <div class="benefit-ico">🤝</div>
+          <div><h4>Komunitas Supportif</h4><p>Forum diskusi aktif dan mentoring dari builder berpengalaman tanpa biaya apapun.</p></div>
+        </div>
+        <div class="benefit">
+          <div class="benefit-ico">💰</div>
+          <div><h4>Group Buy Eksklusif</h4><p>Harga khusus member untuk kit, tools, dan aksesoris melalui program group buy bulanan.</p></div>
+        </div>
+        <div class="benefit">
+          <div class="benefit-ico">🏆</div>
+          <div><h4>Kompetisi &amp; Display</h4><p>Ikuti display contest dan pameran komunitas untuk memperlihatkan hasil karyamu.</p></div>
+        </div>
+        <div class="benefit">
+          <div class="benefit-ico">📦</div>
+          <div><h4>Kit Library &amp; Database</h4><p>Akses review dan panduan build untuk ratusan model kit dari berbagai grade dan seri.</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="form-box reveal">
+      <h3>Daftar Sekarang</h3>
+      <p>Isi form berikut dan tim kami akan menghubungimu segera.</p>
+      <div class="fg"><label>Nama Lengkap</label><input type="text" placeholder="Masukkan nama lengkap kamu" /></div>
+      <div class="fg"><label>Kota Domisili</label><input type="text" placeholder="Jakarta, Bandung, Surabaya, dll" /></div>
+      <div class="fg"><label>No. WhatsApp</label><input type="tel" placeholder="+62 8xx xxxx xxxx" /></div>
+      <div class="fg">
+        <label>Level Builder</label>
+        <select>
+          <option value="">Pilih Level</option>
+          <option>Newtype — Baru mulai, belum punya kit</option>
+          <option>Ensign — Sudah 1–5 kit selesai</option>
+          <option>Lieutenant — 6–20 kit, sudah bisa lining</option>
+          <option>Commander — 20+ kit, mahir custom paint</option>
+          <option>Ace — Full scratch / competition level</option>
+        </select>
+      </div>
+      <div class="fg"><label>Ceritakan Buildmu (Opsional)</label><textarea placeholder="Kit favorit, teknik yang ingin dipelajari, dll..."></textarea></div>
+      <button class="btn btn-submit" onclick="submitForm(this)">Kirim Pendaftaran →</button>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-about">
+      <a href="#" class="footer-logo">
+        <img src="images/logo.png" alt="Mokit ID" />
+        <div class="logo-text">
+          <span class="brand" style="color:#fff">mokit id</span>
+          <span class="sub" style="color:rgba(255,255,255,.4)">Collector Community</span>
+        </div>
+      </a>
+      <p>Komunitas kolektor dan builder Gundam &amp; model kit Indonesia sejak 2018. Membangun lebih dari sekadar plastik.</p>
+      <div class="socials">
+        <a href="#" class="soc">IG</a>
+        <a href="#" class="soc">YT</a>
+        <a href="#" class="soc">TK</a>
+        <a href="#" class="soc">DC</a>
+        <a href="#" class="soc">WA</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Navigasi</h4>
+      <ul class="footer-links">
+        <li><a href="#about">Tentang Komunitas</a></li>
+        <li><a href="#gallery">Gallery Karya</a></li>
+        <li><a href="#tools">Tutorial &amp; Guide</a></li>
+        <li><a href="#events">Events &amp; Gathering</a></li>
+        <li><a href="#join">Daftar Member</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Kategori Kit</h4>
+      <ul class="footer-links">
+        <li><a href="#">Super Deformed (SD)</a></li>
+        <li><a href="#">High Grade (HG)</a></li>
+        <li><a href="#">Master Grade (MG)</a></li>
+        <li><a href="#">Perfect Grade (PG)</a></li>
+        <li><a href="#">Real Grade (RG)</a></li>
+      </ul>
+    </div>
+    <div class="footer-col footer-contact">
+      <h4>Kontak</h4>
+      <p><strong>Email</strong><br />hello@mokitid.community</p>
+      <p><strong>WhatsApp</strong><br />+62 812 3456 7890</p>
+      <p><strong>Website</strong><br />www.mokitid.community</p>
+      <p><strong>Lokasi</strong><br />Seluruh Indonesia</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 <span>MOKIT ID COLLECTOR</span>. All rights reserved.</p>
+    <p>Gundam trademarks owned by <span>Bandai Spirits Co., Ltd.</span></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
